@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Adopción responsable</title>
+        <meta charset="UTF-8">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="encabezado">
+            <nav class="navegacion">
+                <a href="index.html" class="logo nav-link">Fur Angels</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-link nav-menu-link" href="index.html"> Volver</a> </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2>Datos para al adopción</h2>
+            <article> 
+                <h3>Información personal: </h3>
+                <figure>
+                    <form action="/responsable/adopción" method="post">
+                        Nombre del interesado:
+                        <input type="text" name="nombre" value="" size="45" /><br> 
+                        Su dirección exacta:
+                        <textarea name="direccion" rows="4" cols="40">
+                        </textarea><br>
+                        Tiene hijos?:
+                        <select name="hijos">
+                            <option>Sí</option>
+                            <option>No</option>
+                        </select><br>
+                        Tiene otros animales? Cuáles?:  
+                        Perros: <input type="checkbox" name="perros" value="off" />
+                        Gatos: <input type="checkbox" name="gatos" value="off" />
+                        Otros: <input type="checkbox" name="otros" value="off" /><br>
+                        Grupo de edad: 
+                        Menor: <input type="radio" name="edad" value="menor" />
+                        Adulto joven: <input type="radio" name="edad" value="adulto joven" />
+                        Adulto: <input type="radio" name="edad" value="adulto" /><br> 
+                        <input type="submit" value="Enviar"/>
+                    </form>
+                    <figcaption> Por favor llenar todos los campos respectivos </figcaption> 
+                </figure>
+            </article>
+        </section>
+    </body>
+</html>
